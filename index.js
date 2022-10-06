@@ -63,13 +63,12 @@ switch (operacionSeleccionada) {
 
         if (isNaN(numeroUno) && isNaN(numeroDos)){
             console.log('Por favor debes ingresar numeros');
-        } else{
-            if (numeroDos = 0){
-                console.log('Division indeterminada, por favor ingrese otro numero');
-            } else{
-                let resultado = (numeroUno / numeroDos);
-                console.log(`El resultado de la multiplicacion es: ${resultado}`);   
+            if (numeroDos = 0) {
+                console.log('Division indeterminada');
             }
+        } else{
+            let resultado = (numeroUno / numeroDos);
+            console.log(`El resultado de la division es: ${resultado}`); 
         }
         break;
     default:
