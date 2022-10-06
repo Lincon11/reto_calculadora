@@ -7,6 +7,8 @@ console.log('\n');
 
 console.log('1. Suma');
 console.log('2. Resta');
+console.log('3. multiplicacion');
+console.log('4. Division');
 
 console.log('\n');
 console.log('Escoja la operación: ');
@@ -38,6 +40,36 @@ switch (operacionSeleccionada) {
         } else {
             let resultado = (numeroUno - numeroDos);
             console.log(`El resultado de la resta es: ${resultado}`);
+        }
+        break;
+    case 3:
+        console.log('Ingrese Numero Uno')
+        var numeroUno = scanf('%d');
+        console.log('Ingrese Numero Dos');
+        var numeroDos = scanf('%d');
+
+        if (isNaN(numeroUno) && isNaN(numeroDos)){
+            console.log('Por favor debes ingresar numeros');
+        } else{
+            let resultado = (numeroUno * numeroDos);
+            console.log(`El resultado de la multiplicacion es: ${resultado}`);
+        }
+        break;
+    case 4:
+        console.log('Ingrese Numero Uno')
+        var numeroUno = scanf('%d');
+        console.log('Ingrese Numero Dos');
+        var numeroDos = scanf('%d');
+
+        if (isNaN(numeroUno) && isNaN(numeroDos)){
+            console.log('Por favor debes ingresar numeros');
+        } else{
+            if (numeroDos = 0){
+                console.log('Division indeterminada, por favor ingrese otro numero');
+            } else{
+                let resultado = (numeroUno / numeroDos);
+                console.log(`El resultado de la multiplicacion es: ${resultado}`);   
+            }
         }
         break;
     default:
