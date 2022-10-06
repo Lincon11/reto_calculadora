@@ -48,9 +48,9 @@ switch (operacionSeleccionada) {
         console.log('Ingrese Numero Dos');
         var numeroDos = scanf('%d');
 
-        if (isNaN(numeroUno) && isNaN(numeroDos)){
+        if (isNaN(numeroUno) && isNaN(numeroDos)) {
             console.log('Por favor debes ingresar numeros');
-        } else{
+        } else {
             let resultado = (numeroUno * numeroDos);
             console.log(`El resultado de la multiplicacion es: ${resultado}`);
         }
@@ -61,14 +61,15 @@ switch (operacionSeleccionada) {
         console.log('Ingrese Numero Dos');
         var numeroDos = scanf('%d');
 
-        if (isNaN(numeroUno) && isNaN(numeroDos)){
+        if (isNaN(numeroUno) && isNaN(numeroDos)) {
             console.log('Por favor debes ingresar numeros');
-            if (numeroDos = 0) {
-                console.log('Division indeterminada');
+        } else {
+            if (numeroDos === 0) {
+                console.log('Ingresa otro numero es indeterminado');
+            } else {
+                let resultado = (numeroUno / numeroDos);
+                console.log(`El resultado de la division es: ${resultado}`);
             }
-        } else{
-            let resultado = (numeroUno / numeroDos);
-            console.log(`El resultado de la division es: ${resultado}`); 
         }
         break;
     default:
